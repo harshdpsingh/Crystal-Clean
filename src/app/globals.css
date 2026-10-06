@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0B2545;
+  --navy-dark: #07172C;
+  --navy-light: #133B6B;
+  --teal: #0E7C86;
+  --teal-dark: #0A5D65;
+  --teal-light: #149BA7;
+  --offwhite: #F7F5F0;
+  --white: #FFFFFF;
+  --body: #3D4852;
+  --border: #E3E0D8;
+  --gold: #B08D57;
+}
+
+@layer base {
+  body {
+    background-color: #FFFFFF;
+    color: var(--body);
+    font-family: var(--font-sans), "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif), "DM Serif Display", "Fraunces", Georgia, serif;
+    color: var(--navy);
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    line-height: 1.25;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3.25rem;
+    }
+  }
+
+  h2 {
+    font-size: 1.85rem;
+  }
+
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 2.25rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.35rem;
+  }
+
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F5F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #D0CCC2;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0E7C86;
+}
+
+/* Print styling for invoices and packing slips */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
