@@ -10,7 +10,7 @@ interface FloatingWhatsAppProps {
 
 export default function FloatingWhatsApp({ whatsappNumber }: FloatingWhatsAppProps) {
   const defaultText = "Hello Crystal Clean, I am interested in inquiring about hotel amenities and bulk pricing.";
-  const url = buildWhatsAppUrl(whatsappNumber || "919876543210", defaultText);
+  const url = buildWhatsAppUrl(whatsappNumber || "919149953610", defaultText);
 
   return (
     <a

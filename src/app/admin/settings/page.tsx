@@ -127,7 +127,7 @@ export default function AdminSettingsPage() {
               <input
                 type="text"
                 required
-                placeholder="919876543210"
+                placeholder="919149953610"
                 value={settings.whatsapp_number}
                 onChange={(e) => handleChange("whatsapp_number", e.target.value.replace(/[^0-9]/g, ""))}
                 className="w-full bg-offwhite px-3 py-2 rounded border border-border focus:border-teal font-mono font-bold text-navy"

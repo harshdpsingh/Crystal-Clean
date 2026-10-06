@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
 
     // 2. Fetch business settings to get the WhatsApp number
     const settings = await getSettings();
-    const businessWhatsApp = settings.whatsapp_number || "919876543210";
+    const businessWhatsApp = settings.whatsapp_number || process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919149953610";
 
     // 3. Build WhatsApp message and URL
     const message = buildCustomInquiryWhatsAppMessage(savedInquiry);

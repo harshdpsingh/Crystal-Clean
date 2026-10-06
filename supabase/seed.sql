@@ -17,8 +17,8 @@ DELETE FROM settings;
 INSERT INTO settings (key, value) VALUES
   ('business_name', 'Crystal Clean'),
   ('tagline', 'Hotel Amenities & Hygiene Supplies'),
-  ('whatsapp_number', '919876543210'),
-  ('phone', '+91 98765 43210'),
+  ('whatsapp_number', '919149953610'),
+  ('phone', '+91 91499 53610'),
   ('email', 'orders@crystalclean.in'),
   ('address', 'Plot 42, Industrial Area, Phase II, New Delhi 110020, India'),
   ('gst_number', '07AAAAA0000A1Z5'),
